@@ -1,18 +1,18 @@
 Example:
     
-    DEBUG2.allow('*');
-    DEBUG2.deny('*');
-    DEBUG2.allow(function(group){
+    DEBUGX.allow('*');
+    DEBUGX.deny('*');
+    DEBUGX.allow(function(group){
         return group === 'print';
     });
-    DEBUG2.deny(function(group){
+    DEBUGX.deny(function(group){
         return group === 'hidden';
     });
 
-    DEBUG2.format('{{time}} >> {{group}} >> {{message}}');
-    DEBUG2.error('print', 'message');
-    DEBUG2.warn('print', 'message');
-    DEBUG2.info('print', 'message');
+    DEBUGX.format('{{time}} >> {{group}} >> {{message}}');
+    DEBUGX.error('print', 'message');
+    DEBUGX.warn('print', 'message');
+    DEBUGX.info('print', 'message');
     
 TODO:
 
