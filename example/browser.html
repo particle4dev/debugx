@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+</head>
+
+<body>
+
+    <script type="text/javascript" src="../dist/debug2.browser.js"></script>
+    <script type="text/javascript">
+        DEBUG2.denyAll(); // true
+        DEBUG2.allow(function(group){
+            return group === 'print';
+        });
+        DEBUG2.log('print', 'message');
+        DEBUG2.error('print', 'message');
+        DEBUG2.warn('print', 'message');
+        DEBUG2.info('print', 'message');
+    </script>
+</body>
+
+</html>
