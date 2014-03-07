@@ -30,16 +30,16 @@ module.exports = function(grunt){
 
         browserify: {
             js: {
-                src: 'src/debug2.js',
-                dest: 'dist/debug2.browser.js'
+                src: 'src/debugx.js',
+                dest: 'dist/debugx.browser.js'
             }
         },
 
         minified: {
             files: {
                 src: [
-                    'dist/debug2.browser.js',
-                    'src/debug2.js'
+                    'dist/debugx.browser.js',
+                    'src/debugx.js'
                 ],
                 dest: 'dist/'
             },

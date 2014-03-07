@@ -1,1 +1,1 @@
-module.exports = require('./src/debug2');
+module.exports = require('./src/debugx');
